@@ -81,6 +81,10 @@ static CGFloat _underlineHeightNormalDefault =
   return _borderFillColorDefault;
 }
 
++ (void)setBorderFillColorDefault:(UIColor *)borderFillColorDefault {
+  _borderFillColorDefault = borderFillColorDefault ? borderFillColorDefault : [UIColor clearColor];
+}
+
 + (UIRectCorner)roundedCornersDefault {
   return _roundedCornersDefault;
 }
